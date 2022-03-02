@@ -58,7 +58,7 @@
     font-size: 4rem;
     font-weight: 700;
 }
-/* .btn1 {
+.btn1 {
     height: 45px;
     width: 35%;
     border:  none;
@@ -67,5 +67,36 @@
     color: white;
     font-weight: 700;
     border-radius: 60px;
-} */
-
+}
+.img-mit{
+    width: 300px;
+    height: 300px;
+}
+.img-bo{
+    width: 300px;
+    height: 300px;
+}
+.img-xoai {
+    width: 300px;
+    height: 300px;
+}
+.img-xiem{
+    width: 300px;
+    height: 300px;
+}
+.card:hover {
+    -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 16px 10px rgba(81,255,76,0); 
+box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 16px 10px rgba(81,255,76,0);
+}
+.op1{
+    width: 400px;
+    height: 400px;
+}
+.op2{
+    width: 400px;
+    height: 400px;
+}
+.op3{
+    width: 400px;
+    height: 400px;  
+}

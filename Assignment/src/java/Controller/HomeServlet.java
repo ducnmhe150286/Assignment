@@ -5,8 +5,11 @@
  */
 package Controller;
 
+import DAL.CategoryDAO;
+import Model.Category;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -30,7 +33,11 @@ public class HomeServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        CategoryDAO cdao = new Category
+        List<Category> listCategories = new CategoryDAO().getAllCategories();
+        
         request.getRequestDispatcher("index.jsp").forward(request, response);
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

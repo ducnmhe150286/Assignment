@@ -1,5 +1,6 @@
 
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <!doctype html>
@@ -96,6 +97,13 @@
               <div class="col-lg-5 m-auto text-center">
                 <h1>What's Trending </h1>
               </div>
+            </div>
+            <div class = "col-md-3 mb-5">
+                <h3> List Categories</h3>
+                <ul class = " list-group">
+                    <c:forEach items="${listCategories}" var="c">
+                    </c:forEach>
+                    </ul>
             </div>
             <div class="row ">
               <div class="col-lg-3 text-center ">

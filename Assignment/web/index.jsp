@@ -101,7 +101,8 @@
             <div class = "col-md-3 mb-5">
                 <h3> List Categories</h3>
                 <ul class = " list-group">
-                    <c:forEach items="${listCategories}" var="c">
+                    <c:forEach items="${listc}" var="c">
+                        <li class="list-group-item text-white"> ${c.name}</li>
                     </c:forEach>
                     </ul>
             </div>
@@ -186,10 +187,24 @@
       </section>
       <section class="shop">
         <div class="container">
-          <div class="row py-5">
-            <div class="col-lg-8 m-auto text-center">
+          <div class="row ">
+            <div class=" m-auto text-center">
               <h1>Explore Our Store</h1>
-              <h6 style="color: red;"> Pick Your Product From Our Store</h6>
+              <div class="row"> 
+              <c:forEach items="${listp}" var="a">         
+            <div class="col-lg-3 text-center ">
+              <div class="card border-0 bg-light ">
+                <div class="card-body">
+                  <img src="${a.image}" class="img-mit des" alt="">
+                </div>
+                <h6 style="color:black;">${a.name}</h6>
+                  <p>${a.price}$</p>
+              </div>
+              </div>
+                </c:forEach> 
+                  </div>
+                
+<!--                <h6 style="color: red;"> Pick Your Product From Our Store</h6>
             </div>
           </div>
           <div class="row ">
@@ -198,8 +213,8 @@
                 <div class="card-body">
                   <img src="./img/m.jpg" class="img-mit des" alt="">
                 </div>
-              </div>
-              <h6>Jackfruit Tree</h6>
+              </div>-->
+<!--              <h6>Jackfruit Tree</h6>
               <p>4$</p>
             </div>
             <div class="col-lg-3 text-center ">
@@ -265,7 +280,7 @@
                 </div>
               </div>
               <h6>Mango Tree</h6>
-              <p>4$</p>
+              <p>4$</p>-->
             </div>
           </div>
         </div>
